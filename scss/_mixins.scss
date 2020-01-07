@@ -1,0 +1,27 @@
+@mixin link ($link, $hover) {
+    transition: .3s;
+    color: $link;
+    display: block;
+    &:hover {
+        color: $hover;
+    }
+}
+
+@mixin after ($display: block, $content: '', $position: absolute) {
+    display: $display;
+    content: $content;
+    position: $position;
+}
+
+@mixin before ($display: block, $content: '', $position: absolute) {
+    display: $display;
+    content: $content;
+    position: $position;
+}
+
+@mixin flex ($jc, $ai, $dp: flex) {
+    
+    justify-content: $jc;
+    align-items: $ai;
+    display: $dp;
+}

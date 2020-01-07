@@ -1,0 +1,464 @@
+@media screen and (max-width: 1139px) {
+    .menu {
+        display: none !important;
+    }
+
+    .menu-xs {
+        @include flex(space-between, center);
+        position: relative;
+        height: 46px;
+
+        span {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        .icon-menu {
+            display: block;
+            width: 25px;
+            height: 22.08px;
+            background: url(/img/burger.svg) no-repeat 50% 50%;
+            background-size: cover;
+        }
+    }
+
+    .header .header-top-outer {
+        min-height: 144px;
+        border-width: 46px;
+    }
+
+    .contacts {
+        @include flex (space-between, center);
+
+        a {
+            margin: 0 12px;
+        }
+    }
+
+    .made .card-img::after {
+        @include after;
+        @include flex (center, center);
+        content: 'Перейти';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        top: 0;
+        font-size: 24px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width: 1025px) {
+    .footer .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-top .logo-and-politica {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer .footer-top .schedule,
+    .footer .footer-top .contact {
+        width: 35.33%;
+    }
+
+    .footer .footer-bottom .footer-bottom-inner .mail-us {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .about-text>a,
+    .about-text p {
+        padding-bottom: 30px;
+        display: block;
+        width: 100%;
+        padding: 0 25px 20px 25px;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .contacts-page .contacts-wrap {
+        width: 100%;
+        padding: 0 20px;
+
+        &>div {
+            width: 100% !important;
+        }
+    }
+
+    .contacts-page .contacts-wrap .right-contact {
+        align-items: flex-start;
+        border-left: 4px solid #FF5919;
+        border-right: none;
+
+        span {
+            text-align: left;
+        }
+    }
+
+    .contacts-page .contacts-wrap .schedule h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .right-contact span br {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 905px) {
+
+    .header {
+        min-height: 30px;
+
+        .header-banner {
+            min-height: 400px;
+            justify-content: center;
+            text-align: center;
+
+            h1 {
+                font-size: 32px;
+                line-height: 18px;
+                margin-left: 0;
+
+                span {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 58px;
+                }
+            }
+        }
+    }
+
+    .category-content .category-card {
+        width: 50%;
+        padding: 15px 0;
+
+        &:nth-child(even) {
+            padding-left: 7.5px;
+        }
+
+        &:nth-child(odd) {
+            padding-right: 7.5px;
+        }
+    }
+
+    .prod-grid .prod-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .callback-form-title .default-title {
+        padding: 52px 0 18px;
+    }
+
+    .form-inner {
+        flex-direction: column;
+
+        .name,
+        .tel {
+            align-items: center;
+            width: 242px;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        label {
+            font-size: 14px;
+            line-height: 26px;
+            margin-right: auto;
+            margin-bottom: 0;
+        }
+
+        input {
+            height: 40px;
+            font-size: 12px;
+            line-height: 26px;
+            padding: 0 10px;
+        }
+    }
+
+    .callback-form .send input {
+        width: 242px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .made-title h2 {
+        font-size: 24px;
+        margin: 38px 0 10px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .header .header-top-outer {
+        min-height: 218px;
+    }
+
+    .header .header-banner {
+        min-height: 170px;
+    }
+
+    .header .header-top {
+        flex-direction: column;
+
+        .logo {
+            margin-top: 25px;
+        }
+
+        .contacts {
+            margin: 25px 0 25px;
+            display: block;
+
+            a {
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+
+    }
+
+    .category-content {
+
+        // justify-content: space-between !important;
+        .category-card {
+            margin-bottom: -15px;
+
+            .card-title {
+                padding-bottom: 7px !important;
+            }
+        }
+
+    }
+
+    .card-title h3 {
+        font-size: 12px !important;
+        line-height: 15px !important;
+        min-height: 45px !important;
+    }
+
+    .category .category-title h2 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 20px 0 0;
+    }
+
+    .default-title {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 25px 0 25px;
+    }
+
+    .category .provider .provider-content .provider-img {
+        width: 50%;
+    }
+
+    .category .provider .provider-content .provider-img:not(:last-child) {
+        margin-bottom: -15px;
+    }
+
+    .category .client .client-content {
+        justify-content: center;
+    }
+
+    .category .client .client-content .client-img {
+        margin: 0;
+        padding: 15px;
+        width: 50%;
+    }
+
+    .doughter-content {
+        padding-bottom: 25px !important;
+
+        iframe {
+            height: 217px;
+        }
+    }
+
+    .footer .footer-top {
+        flex-direction: column;
+        padding-bottom: 5px;
+
+        &>div {
+            width: 100% !important;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .default-footer-title {
+            margin: 25px 0 15px;
+        }
+
+        .logo-and-politica .politica {
+            margin-left: 0;
+            font-size: 15px;
+        }
+
+        .logo-and-politica,
+        .schedule,
+        .contact {
+            min-height: 20px;
+            margin-bottom: -15px;
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+        .contact a {
+            margin-bottom: 20px;
+        }
+
+        .schedule span,
+        .contact span {
+            font-size: 16px;
+            line-height: 21px;
+            margin-top: 15px;
+        }
+    }
+
+    .footer .footer-bottom .footer-bottom-inner>div {
+        padding: 15px 0;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+        padding: 25px 0;
+
+        .mail-us {
+            text-align: center;
+            max-width: 100% !important;
+
+            span {
+                font-size: 12px !important;
+            }
+        }
+
+        .kontur {
+            min-width: 226px !important;
+
+            a {
+                font-size: 12px !important;
+            }
+        }
+    }
+
+    .footer .footer-top .contact a,
+    .footer .footer-top .schedule a,
+    .prep {
+        display: inline-block !important;
+    }
+
+    .prep {
+        margin-left: -4px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .prod-grid {
+        flex-direction: column;
+
+        .prod-item {
+            width: 100%;
+            padding: 0;
+
+            .offer {
+                height: 41px;
+                font-size: 14px;
+            }
+
+            .card-title h3 {
+                font-size: 14px !important;
+            }
+        }
+
+        .prod-img {
+            display: block;
+            width: 100%;
+
+        }
+    }
+
+    .made .card-img::after {
+        font-size: 14px !important;
+    }
+
+    .about-title h2 {
+        font-size: 24px;
+        padding: 35px 0 35px;
+    }
+
+    .about-text>a,
+    .about-text p {
+        padding: 0 25px 20px 25px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .contacts-page .contacts-wrap>div {
+        margin-bottom: 40px;
+    }
+
+    .contacts-pag-title h2 {
+        padding: 30px 30px;
+        font-size: 24px;
+    }
+
+    .contacts-page .contact>span,
+    .contacts-page .schedule>span,
+    .contacts-page .contact a,
+    .contacts-page .schedule a,
+    .contacts-page .prep {
+        font-size: 16px !important;
+    }
+}
+
+
+
+@media screen and (min-width: 1140px) {
+
+    .menu-xs,
+    .mobile-menu {
+        display: none !important;
+    }
+
+    // .header .header-banner h1 {
+    //     width: 1140px;
+    // }
+}
+
+@media screen and (min-width: 1328px) {
+    .header .header-banner h1 {
+        width: 1140px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .prep {
+        display: none !important;
+    }
+}
